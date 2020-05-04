@@ -1,0 +1,9 @@
+<h1 style="text-align: center;"> Burgers List</h1>
+
+<div id="burgerList">
+    <div class="burgerInList" *ngFor="let burger of burgers">
+        <img src="{{burger.image}}" class="burgerImg">
+        <h2>{{burger.name}}</h2>
+        <p>Price : {{burger.price}}</p>
+    </div>
+</div>
