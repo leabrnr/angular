@@ -1,18 +1,1 @@
-#burgerList {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    text-align: center;
-}
-
-.burgerInList {
-    background-color: darkgray;
-    border-radius: 3em;
-    padding-bottom: 1px;
-    margin-bottom: 30px;
-}
-
-.burgerImg {
-    width: 80%;
-    margin-top: 20px;
-}
+@import "../../styles.css";

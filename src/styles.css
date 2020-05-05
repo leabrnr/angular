@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%;
+    width: 100%; 
+    background-color: #B2DFDB;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.card-burger {
+    max-width: 400px;
+    background-color: #37474F;
+    color: ghostwhite;
+    border-radius: 3em;
+    text-align: center;
+  }
+
+  .toolbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background-color: #37474F;
+    color: ghostwhite;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .detail-card {
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .mat-card-image {
+      width: 99%;
+      margin: auto, 5px;
+  }
+
+  .mat-card-header-text{
+      width: 100%;
+  }
+
+  .mat-card-title {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mat-card-subtitle {
+      color: ghostwhite;
+  }

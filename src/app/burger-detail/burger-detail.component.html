@@ -1,0 +1,21 @@
+<div class='toolbar'>
+    <h1>What's in this one ?</h1>
+</div>
+  
+
+    <mat-card class="card-burger detail-card">
+    <mat-card-header>
+      <mat-card-title>{{burger.name}}</mat-card-title>
+      <mat-card-subtitle>{{burger.price}} €</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{burger.image}}">
+    <mat-card-content>
+        <p>Nutriscore : {{burger.nutriscore}}</p>
+        <p>Satured Fat : {{burger.nutriments['saturated-fat']}}</p>
+        <p>Energy Kcal : {{burger.nutriments['energy-kcal']}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-raised-button color="accent" (click)="goBack()">Return</a>
+    </mat-card-actions>
+  </mat-card>
+  

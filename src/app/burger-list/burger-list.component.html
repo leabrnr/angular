@@ -1,9 +1,20 @@
-<h1 style="text-align: center;"> Burgers List</h1>
-
-<div id="burgerList">
-    <div class="burgerInList" *ngFor="let burger of burgers">
-        <img src="{{burger.image}}" class="burgerImg">
-        <h2>{{burger.name}}</h2>
-        <p>Price : {{burger.price}}</p>
-    </div>
+<div class='toolbar'>
+  <h1>What's on the menu today ?</h1>
 </div>
+
+<mat-grid-list [cols]="6" rowHeight="200px">
+    <mat-grid-tile [colspan]="2" [rowspan]="3" *ngFor="let burger of burgers">
+      <mat-card class="card-burger">
+        <mat-card-header>
+          <mat-card-title>{{burger.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{burger.image}}">
+        <mat-card-content>
+          <p>{{burger.price}} €</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-raised-button color="accent" routerLink="burger/{{burger.id}}">See more</a>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BurgerListComponent } from './burger-list/burger-list.component';
+import { BurgerDetailComponent } from './burger-detail/burger-detail.component';
 
 
 const routes: Routes = [
-  { path: 'burgers', component: BurgerListComponent }
+  { path: '', component: BurgerListComponent },
+  { path: 'burger/:id', component: BurgerDetailComponent }
 ];
 
 @NgModule({

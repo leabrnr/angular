@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom themes
+@import 'custom-theme.scss';
+
+.my-theme {
+  @include angular-material-theme($burger-theme);
+}
